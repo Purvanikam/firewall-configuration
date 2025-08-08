@@ -1,0 +1,25 @@
+# Firewall Configuration Steps
+
+## If using Windows Firewall:
+
+### 1. View current rules:
+- Go to Control Panel > System and Security > Windows Defender Firewall > Advanced settings
+- Click **Inbound Rules** to see existing rules
+
+### 2. Block port 23 (Telnet):
+- Click **New Rule > Port > TCP > 23 > Block the connection**
+
+### 3. Test port 23:
+- Use `telnet localhost 23` (if Telnet Client is enabled)  
+- Should show connection blocked
+
+### 4. Remove the rule:
+- Find the rule under Inbound Rules and **delete** it
+
+---
+
+## If using UFW (Linux):
+
+### 1. Enable UFW:
+```bash
+sudo ufw enable
