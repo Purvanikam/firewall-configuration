@@ -1,0 +1,35 @@
+# Firewall Configuration Report
+
+## System Information
+- **Operating System:** Windows
+- **Tool Used:** Windows Defender Firewall
+- **Date:** August 8, 2025
+
+---
+
+## Configuration Steps
+
+1. Open **Windows Defender Firewall with Advanced Security**.
+2. Created a **new inbound rule** to block traffic on **port 23 (Telnet)**.
+3. Verified the rule is active under **Inbound Rules**.
+4. Attempted to connect via Telnet (blocked as expected).
+5. Deleted the test rule to restore the original firewall state.
+
+---
+
+##Firewall Rule Screenshot
+
+![Firewall Screenshot](windows_firewall_screenshot.png)
+
+---
+
+## How Firewall Filters Traffic
+
+A firewall monitors and controls incoming and outgoing network traffic using pre-defined rules.
+
+In this task:
+
+- We **blocked inbound traffic on port 23**, which is used by the Telnet protocol — a known insecure protocol.
+- This prevents remote attackers from exploiting the system via Telnet.
+- Firewalls act as a **first line of defense** against unauthorized access, malware communication, and data leaks.
+- They can be configured to **allow or deny traffic** based on IP, port, protocol, or application.
