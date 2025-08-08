@@ -1,0 +1,13 @@
+Summary – Task 4: Firewall Configuration
+
+In this task, a basic firewall rule was configured on a Windows system using Windows Defender Firewall. 
+The goal was to understand how firewall rules manage network traffic and protect the system from unauthorized access.
+
+- A new inbound rule was created to block traffic on port 23 (Telnet).
+- The rule was tested by attempting to connect to port 23 — the connection was successfully blocked.
+- The rule was then removed to restore the system to its original state.
+
+Learning Outcome:
+- Gained hands-on experience in navigating firewall settings.
+- Understood how to create, test, and remove firewall rules.
+- Learned that firewalls are essential for filtering unwanted or malicious traffic.
